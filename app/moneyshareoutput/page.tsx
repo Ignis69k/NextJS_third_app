@@ -1,11 +1,12 @@
 "use client"
 
+import { Suspense } from "react";
 import Image from "next/image";
 import imgmoney from "@/assets/images/imgmoney.png";
 import Footer from "@/components/Footer";
 import { useRouter, useSearchParams } from "next/navigation";
 
-export default function Page() {
+function MoneyShareContent() {
   const router = useRouter();
 
   //นำค่าที่ส่งมาจากหน้าแรกมาเก็บไว้ในตัวแปร
@@ -54,5 +55,13 @@ export default function Page() {
       {/* Footer */}
       <Footer />
     </div>
+  );
+}
+
+export default function Page() {
+  return (
+    <Suspense fallback={<div className="flex justify-center items-center min-h-screen">กำลังโหลด...</div>}>
+      <MoneyShareContent />
+    </Suspense>
   );
 }
