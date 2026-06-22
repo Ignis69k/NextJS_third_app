@@ -8,10 +8,10 @@ const prompt = Prompt({
 });
 
 export const metadata: Metadata = {
-  title: "American Share by NinniN",
+  title: "American Share by NCZ",
   description: "เว็บคำนวณเงินที่ต้องแชร์กัน",
   keywords: ["แชร์เงิน", "คำนวณเงิน", "แชร์กัน", "คำนวณแชร์"],
-  authors: [{ name: "NinniN", url: "https://github.com/chanintornchalermsuk" }],
+  authors: [{ name: "NCZ", url: "https://github.com/Ignis69k" }],
 };
 
 export default function RootLayout({
