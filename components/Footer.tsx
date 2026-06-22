@@ -3,7 +3,7 @@ export default function Footer() {
     <div className="text-center p-4 mt-5">
         Copyright © 2026 - All rights reserved
         <br />
-        Made with ❤️ by NinniN DTI SAU
+        Made with ❤️ by NCZ SAU
     </div>
   )
 }
